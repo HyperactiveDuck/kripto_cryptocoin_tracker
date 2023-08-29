@@ -69,7 +69,7 @@ class PriceScreenState extends State<PriceScreen> {
     }
 
     return DropdownButton<String>(
-      style: TextStyle(color: Colors.white, fontSize: 50.0),
+      style: const TextStyle(color: Colors.white, fontSize: 50.0),
       iconSize: 100.0,
       value: selectedCurrency,
       items: dropdownItems,
@@ -85,7 +85,7 @@ class PriceScreenState extends State<PriceScreen> {
     );
   }
 
-  CupertinoPicker IOSPicker() {
+  CupertinoPicker iOSPicker() {
     List<Widget> getPickerItems() {
       List<Text> pickerItems = [];
       for (String currency in currenciesList) {
@@ -107,7 +107,7 @@ class PriceScreenState extends State<PriceScreen> {
 
   Widget getPlatform() {
     if (Platform.isIOS == true) {
-      return IOSPicker();
+      return iOSPicker();
     } else if (Platform.isAndroid == true) {
       return androidDropdown();
     } else {
@@ -133,7 +133,7 @@ class PriceScreenState extends State<PriceScreen> {
               ethPrice: ethPrice, selectedCurrency: selectedCurrency),
           ExchangeCartLTC(
               ltcPrice: ltcPrice, selectedCurrency: selectedCurrency),
-          SizedBox(height: 377.0),
+          const SizedBox(height: 377.0),
           Container(
               height: 125.0,
               alignment: Alignment.center,
@@ -166,11 +166,11 @@ class ExchangeCardBTC extends StatelessWidget {
           borderRadius: BorderRadius.circular(10.0),
         ),
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 28.0),
+          padding: const EdgeInsets.symmetric(vertical: 15.0, horizontal: 28.0),
           child: Text(
             '1 BTC = $bitcoinPrice $selectedCurrency',
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 20.0,
               color: Colors.white,
             ),
@@ -202,11 +202,11 @@ class ExchangeCartLTC extends StatelessWidget {
           borderRadius: BorderRadius.circular(10.0),
         ),
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 28.0),
+          padding: const EdgeInsets.symmetric(vertical: 15.0, horizontal: 28.0),
           child: Text(
             '1 LTC = $ltcPrice $selectedCurrency',
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 20.0,
               color: Colors.white,
             ),
@@ -238,11 +238,11 @@ class ExchangeCardETH extends StatelessWidget {
           borderRadius: BorderRadius.circular(10.0),
         ),
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 28.0),
+          padding: const EdgeInsets.symmetric(vertical: 15.0, horizontal: 28.0),
           child: Text(
             '1 ETH = $ethPrice $selectedCurrency',
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 20.0,
               color: Colors.white,
             ),

@@ -1,5 +1,4 @@
 import 'networking.dart';
-import 'package:kripto_cryptocoin_tracker/price_screen.dart';
 import 'package:flutter/material.dart';
 
 class BitcoinExchange {
