@@ -22,10 +22,13 @@ const List<String> currenciesList = [
   'ZAR'
 ];
 
-class AllList {
-  List<String> cryptoList = [
-    'BTC',
-    'ETH',
-    'LTC',
-  ];
-}
+List<String> cryptoList = [
+  'BTC',
+  'ETH',
+  'LTC',
+  'USDT',
+  'BNB',
+  'XRP',
+  'SOL',
+  'DOT',
+];
